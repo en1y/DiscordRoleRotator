@@ -97,98 +97,98 @@ class GuildState:
 
 MESSAGES = {
     "en": {
-        "help_title": "Role Cycler — Commands",
+        "help_title": "📘 Role Cycler — Commands",
         "help_body": (
-            "**/{} help** — Show this help.\n"
-            "**/{} run** — Randomly assign role B to the next Y users from role A and remove role B from previous holders (public). Admins or permitted users only.\n"
-            "**/{} status** — Show current B holders and the planned order until the end of the cycle in groups of Y.\n"
-            "**/{} picks-number show** — Show current Y.\n"
-            "**/{} picks-number set {num}** — Set Y. Admins or permitted users only.\n"
-            "**/{} language show** — Show current language.\n"
-            "**/{} language set {en|hr}** — Change language. Admins or permitted users only.\n"
-            "**/{} permissions list** — List permitted users/roles.\n"
-            "**/{} permissions add_user|remove_user {user}** — Manage user permission. Admins or permitted users only.\n"
-            "**/{} permissions add_role|remove_role {role}** — Manage role permission. Admins or permitted users only.\n"
-            "**/{} schedule preset {daily|weekly|monthly} [hour] [minute]** — Use a preset schedule. Admins or permitted users only.\n"
-            "**/{} schedule every-days {days} [hour] [minute]** — Flexible every-N-days schedule. Admins or permitted users only.\n"
-            "**/{} schedule show** — Show current schedule.\n"
-            "**/{} schedule stop** — Stop the automatic scheduler."
+            "🔹 **/{} help** — 📖 Show this help.\n"
+            "🔹 **/{} run** — 🎯 Randomly assign role B to the next Y users from role A and remove role B from previous holders (public). Admins or permitted users only.\n"
+            "🔹 **/{} status** — 📊 Show current B holders and the planned order until the end of the cycle in groups of Y.\n"
+            "🔹 **/{} picks-number show** — 🔢 Show current Y.\n"
+            "🔹 **/{} picks-number set {num}** — ⚙️ Set Y. Admins or permitted users only.\n"
+            "🔹 **/{} language show** — 🌐 Show current language.\n"
+            "🔹 **/{} language set {en|hr}** — 🌐 Change language. Admins or permitted users only.\n"
+            "🔹 **/{} permissions list** — 🔐 List permitted users/roles.\n"
+            "🔹 **/{} permissions add_user|remove_user {user}** — 👤 Manage user permission. Admins or permitted users only.\n"
+            "🔹 **/{} permissions add_role|remove_role {role}** — 📛 Manage role permission. Admins or permitted users only.\n"
+            "🔹 **/{} schedule preset {daily|weekly|monthly} [hour] [minute]** — 🗓️ Use a preset schedule. Admins or permitted users only.\n"
+            "🔹 **/{} schedule every-days {days} [hour] [minute]** — 🗓️ Flexible every-N-days schedule. Admins or permitted users only.\n"
+            "🔹 **/{} schedule show** — 🗓️ Show current schedule.\n"
+            "🔹 **/{} schedule stop** — 🛑 Stop the automatic scheduler."
         ),
         "run_public_header": "🎲 New selection for role B",
         "run_no_channel": "⚠️ Announcement channel not set; sending here.",
-        "run_summary": "Assigning role B to: {mentions}\nRemoved role B from: {removed_mentions}",
-        "run_insufficient": "Not enough users with role A to fill Y without repeats; some users may repeat across cycles.",
+        "run_summary": "✅ Assigned role B: {mentions}\n❌ Removed role B: {removed_mentions}",
+        "run_insufficient": "🚫 Not enough users with role A to fill Y without repeats; some users may repeat across cycles.",
         "status_title": "📊 Role B Status",
-        "status_current": "Currently holding B ({n}): {mentions}",
-        "status_queue": "Next in cycle (in groups of {y}):\n{lines}",
-        "picks_show": "Current Y (picks per run): **{y}**",
-        "picks_set": "Picks per run set to **{y}**",
-        "lang_show": "Current language: **{lang}**",
-        "lang_set": "Language set to **{lang}**",
+        "status_current": "👥 Currently holding B ({n}): {mentions}",
+        "status_queue": "⏭️ Next in cycle (in groups of {y}):\n{lines}",
+        "picks_show": "🎯 Current Y (picks per run): **{y}**",
+        "picks_set": "🛠️ Picks per run set to **{y}**",
+        "lang_show": "🌐 Current language: **{lang}**",
+        "lang_set": "🌐 Language set to **{lang}**",
         "perm_list_header": "🔐 Permissions",
-        "perm_list_users": "Users: {users}",
-        "perm_list_roles": "Roles: {roles}",
-        "perm_changed": "Permissions updated.",
-        "schedule_show": "⏰ Schedule: **{desc}** (Time: {hh:02d}:{mm:02d} @ {tz})",
-        "schedule_set": "Schedule updated: **{desc}** at {hh:02d}:{mm:02d}",
-        "schedule_stopped": "Scheduler stopped.",
-        "config_needed": "This server isn't configured yet. Admins: set role A, role B, picks number, and schedule in data.json or via commands.",
-        "not_permitted": "You don't have permission to use this command.",
-        "debug_starting": "Starting up… syncing commands and scheduler.",
-        "debug_synced": "Commands synced for guild {gid}.",
-        "debug_purged": "Purged {n} stale commands for guild {gid}.",
-        "debug_run": "Manual run invoked by {user} in guild {gid}.",
-        "debug_sched_run": "Scheduled run executed in guild {gid}.",
-        "debug_saved": "State saved for guild {gid}.",
-        "debug_error": "Error: {err}",
-        "debug_config": "Loaded config for guild {gid}.",
+        "perm_list_users": "👤 Users: {users}",
+        "perm_list_roles": "📛 Roles: {roles}",
+        "perm_changed": "✅ Permissions updated.",
+        "schedule_show": "🗓️ Schedule: **{desc}** (Time: {hh:02d}:{mm:02d} @ {tz})",
+        "schedule_set": "🗓️ Schedule updated: **{desc}** at {hh:02d}:{mm:02d}",
+        "schedule_stopped": "⏹️ Scheduler stopped.",
+        "config_needed": "⚠️ This server isn't configured yet. Admins: set role A, role B, picks number, and schedule in data.json or via commands.",
+        "not_permitted": "🚫 You don't have permission to use this command.",
+        "debug_starting": "🔄 Starting up… syncing commands and scheduler.",
+        "debug_synced": "🔄 Commands synced for guild {gid}.",
+        "debug_purged": "🧹 Purged {n} stale commands for guild {gid}.",
+        "debug_run": "🕹️ Manual run invoked by {user} in guild {gid}.",
+        "debug_sched_run": "⏱️ Scheduled run executed in guild {gid}.",
+        "debug_saved": "💾 State saved for guild {gid}.",
+        "debug_error": "❗ Error: {err}",
+        "debug_config": "📥 Loaded config for guild {gid}.",
     },
     "hr": {
-        "help_title": "Role Cycler — Naredbe",
+        "help_title": "📘 Role Cycler — Naredbe",
         "help_body": (
-            "**/{} help** — Prikaži pomoć.\n"
-            "**/{} run** — Nasumično dodijeli ulogu B sljedećim Y korisnicima s ulogom A i ukloni ulogu B prethodnim (javno). Samo administratori ili ovlašteni korisnici.\n"
-            "**/{} status** — Prikaži tko trenutno ima B i redoslijed do kraja ciklusa u grupama od Y.\n"
-            "**/{} picks-number show** — Prikaži trenutačni Y.\n"
-            "**/{} picks-number set {num}** — Postavi Y. Samo administratori ili ovlašteni korisnici.\n"
-            "**/{} language show** — Prikaži jezik.\n"
-            "**/{} language set {en|hr}** — Promijeni jezik. Samo administratori ili ovlašteni korisnici.\n"
-            "**/{} permissions list** — Prikaži ovlasti.\n"
-            "**/{} permissions add_user|remove_user {user}** — Uredi ovlast korisnika. Samo administratori ili ovlašteni korisnici.\n"
-            "**/{} permissions add_role|remove_role {role}** — Uredi ovlast uloge. Samo administratori ili ovlašteni korisnici.\n"
-            "**/{} schedule preset {daily|weekly|monthly} [sat] [minuta]** — Zadani raspored. Samo administratori ili ovlašteni korisnici.\n"
-            "**/{} schedule every-days {dana} [sat] [minuta]** — Fleksibilno, svakih N dana. Samo administratori ili ovlašteni korisnici.\n"
-            "**/{} schedule show** — Prikaži raspored.\n"
-            "**/{} schedule stop** — Zaustavi automatsko pokretanje."
+            "🔹 **/{} help** — 📖 Prikaži pomoć.\n"
+            "🔹 **/{} run** — 🎯 Nasumično dodijeli ulogu B sljedećim Y korisnicima s ulogom A i ukloni ulogu B prethodnim (javno). Samo administratori ili ovlašteni korisnici.\n"
+            "🔹 **/{} status** — 📊 Prikaži tko trenutno ima B i redoslijed do kraja ciklusa u grupama od Y.\n"
+            "🔹 **/{} picks-number show** — 🔢 Prikaži trenutačni Y.\n"
+            "🔹 **/{} picks-number set {num}** — ⚙️ Postavi Y. Samo administratori ili ovlašteni korisnici.\n"
+            "🔹 **/{} language show** — 🌐 Prikaži jezik.\n"
+            "🔹 **/{} language set {en|hr}** — 🌐 Promijeni jezik. Samo administratori ili ovlašteni korisnici.\n"
+            "🔹 **/{} permissions list** — 🔐 Prikaži ovlasti.\n"
+            "🔹 **/{} permissions add_user|remove_user {user}** — 👤 Uredi ovlast korisnika. Samo administratori ili ovlašteni korisnici.\n"
+            "🔹 **/{} permissions add_role|remove_role {role}** — 📛 Uredi ovlast uloge. Samo administratori ili ovlašteni korisnici.\n"
+            "🔹 **/{} schedule preset {daily|weekly|monthly} [sat] [minuta]** — 🗓️ Zadani raspored. Samo administratori ili ovlašteni korisnici.\n"
+            "🔹 **/{} schedule every-days {dana} [sat] [minuta]** — 🗓️ Fleksibilno, svakih N dana. Samo administratori ili ovlašteni korisnici.\n"
+            "🔹 **/{} schedule show** — 🗓️ Prikaži raspored.\n"
+            "🔹 **/{} schedule stop** — 🛑 Zaustavi automatsko pokretanje."
         ),
         "run_public_header": "🎲 Novi odabir za ulogu B",
         "run_no_channel": "⚠️ Kanal za objave nije postavljen; šaljem ovdje.",
-        "run_summary": "Uloga B dodijeljena: {mentions}\nUklonjeno s: {removed_mentions}",
-        "run_insufficient": "Nema dovoljno korisnika s ulogom A za Y bez ponavljanja; neki se mogu ponoviti preko ciklusa.",
+        "run_summary": "✅ Uloga B dodijeljena: {mentions}\n❌ Uklonjeno s: {removed_mentions}",
+        "run_insufficient": "🚫 Nema dovoljno korisnika s ulogom A za Y bez ponavljanja; neki se mogu ponoviti preko ciklusa.",
         "status_title": "📊 Status uloge B",
-        "status_current": "Trenutno imaju B ({n}): {mentions}",
-        "status_queue": "Sljedeći u ciklusu (u grupama od {y}):\n{lines}",
-        "picks_show": "Trenutni Y (broj dodjela po pokretanju): **{y}**",
-        "picks_set": "Postavljeno Y na **{y}**",
-        "lang_show": "Trenutni jezik: **{lang}**",
-        "lang_set": "Jezik postavljen na **{lang}**",
+        "status_current": "👥 Trenutno imaju B ({n}): {mentions}",
+        "status_queue": "⏭️ Sljedeći u ciklusu (u grupama od {y}):\n{lines}",
+        "picks_show": "🎯 Trenutni Y (broj dodjela po pokretanju): **{y}**",
+        "picks_set": "🛠️ Postavljeno Y na **{y}**",
+        "lang_show": "🌐 Trenutni jezik: **{lang}**",
+        "lang_set": "🌐 Jezik postavljen na **{lang}**",
         "perm_list_header": "🔐 Ovlasti",
-        "perm_list_users": "Korisnici: {users}",
-        "perm_list_roles": "Uloge: {roles}",
-        "perm_changed": "Ovlasti ažurirane.",
-        "schedule_show": "⏰ Raspored: **{desc}** (Vrijeme: {hh:02d}:{mm:02d} @ {tz})",
-        "schedule_set": "Raspored ažuriran: **{desc}** u {hh:02d}:{mm:02d}",
-        "schedule_stopped": "Raspored zaustavljen.",
-        "config_needed": "Ovaj server još nije konfiguriran. Admini: postavite uloge A i B, Y i raspored u data.json ili kroz naredbe.",
-        "not_permitted": "Nemaš ovlasti za ovu naredbu.",
-        "debug_starting": "Pokretanje… sinkroniziram naredbe i raspored.",
-        "debug_synced": "Naredbe sinkronizirane za server {gid}.",
-        "debug_purged": "Obrisano {n} zastarjelih naredbi za server {gid}.",
-        "debug_run": "Ručna naredba run pokrenuta od {user} na serveru {gid}.",
-        "debug_sched_run": "Zakazano pokretanje izvršeno na serveru {gid}.",
-        "debug_saved": "Stanje spremljeno za server {gid}.",
-        "debug_error": "Greška: {err}",
-        "debug_config": "Učitana konfiguracija za server {gid}.",
+        "perm_list_users": "👤 Korisnici: {users}",
+        "perm_list_roles": "📛 Uloge: {roles}",
+        "perm_changed": "✅ Ovlasti ažurirane.",
+        "schedule_show": "🗓️ Raspored: **{desc}** (Vrijeme: {hh:02d}:{mm:02d} @ {tz})",
+        "schedule_set": "🗓️ Raspored ažuriran: **{desc}** u {hh:02d}:{mm:02d}",
+        "schedule_stopped": "⏹️ Raspored zaustavljen.",
+        "config_needed": "⚠️ Ovaj server još nije konfiguriran. Admini: postavite uloge A i B, Y i raspored u data.json ili kroz naredbe.",
+        "not_permitted": "🚫 Nemaš ovlasti za ovu naredbu.",
+        "debug_starting": "🔄 Pokretanje… sinkroniziram naredbe i raspored.",
+        "debug_synced": "🔄 Naredbe sinkronizirane za server {gid}.",
+        "debug_purged": "🧹 Obrisano {n} zastarjelih naredbi za server {gid}.",
+        "debug_run": "🕹️ Ručna naredba run pokrenuta od {user} na serveru {gid}.",
+        "debug_sched_run": "⏱️ Zakazano pokretanje izvršeno na serveru {gid}.",
+        "debug_saved": "💾 Stanje spremljeno za server {gid}.",
+        "debug_error": "❗ Greška: {err}",
+        "debug_config": "📥 Učitana konfiguracija za server {gid}.",
     },
 }
 
