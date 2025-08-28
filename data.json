@@ -1,0 +1,48 @@
+{
+  "config": {
+    "guild_id": 1409854876661579818,
+    "role_a_name": "a",
+    "role_b_name": "b",
+    "picks_y": 2,
+    "language": "hr",
+    "timezone": "Europe/Zagreb",
+    "schedule": {
+      "enabled": true,
+      "type": "daily",
+      "n_days": 3,
+      "weekday": 0,
+      "dom": 1,
+      "time": "18:01"
+    }
+  },
+  "permissions": {
+    "users": [],
+    "roles": []
+  },
+  "current_holders": [
+    873159913776496681,
+    873159913776496681
+  ],
+  "stats": {
+    "1215695470651904041": {
+      "seconds_total": 155,
+      "hold_started_ts": null
+    },
+    "873159913776496681": {
+      "seconds_total": 68671,
+      "hold_started_ts": 1756366488
+    },
+    "1408518022959992906": {
+      "seconds_total": 68744,
+      "hold_started_ts": null
+    }
+  },
+  "current_cycle": {
+    "queue": [
+      1408518022959992906,
+      1215695470651904041
+    ],
+    "index": 0
+  },
+  "next_run_ts": 1756396860
+}
